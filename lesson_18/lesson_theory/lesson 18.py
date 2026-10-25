@@ -145,31 +145,31 @@ def create_boooking():
 # pprint(user1.json())
 
 
-URL = "https://restful-booker.herokuapp.com/booking"
-
-def path_booking(id_):
-    info = {
-    "firstname" : "James",
-    "lastname" : "Brown"
-    }
-
-    headers = {
-        "Cookie": f"token={get_token()}"
-    }
-    response = requests.patch(URL + f"/{id_}", json=info, headers=headers)
-
-    return response
-
-result = create_boooking()
-test_id_user = result.json()["bookingid"]
-
-path_booking(test_id_user)
-
-response = get_booking_by_id(test_id_user)
-print(response.status_code)
-# print(response.text)
-
-pprint(response.json())
+# URL = "https://restful-booker.herokuapp.com/booking"
+#
+# def path_booking(id_):
+#     info = {
+#     "firstname" : "James",
+#     "lastname" : "Brown"
+#     }
+#
+#     headers = {
+#         "Cookie": f"token={get_token()}"
+#     }
+#     response = requests.patch(URL + f"/{id_}", json=info, headers=headers)
+#
+#     return response
+#
+# result = create_boooking()
+# test_id_user = result.json()["bookingid"]
+#
+# path_booking(test_id_user)
+#
+# response = get_booking_by_id(test_id_user)
+# print(response.status_code)
+# # print(response.text)
+#
+# pprint(response.json())
 
 
 
