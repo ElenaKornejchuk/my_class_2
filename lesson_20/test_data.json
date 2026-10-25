@@ -1,0 +1,7 @@
+{
+    "user": {
+        "name": "Maria",
+        "role": "tester"
+    },
+    "expected_status": "active"
+}
